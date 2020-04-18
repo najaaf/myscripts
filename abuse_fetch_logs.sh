@@ -70,7 +70,7 @@ final()
                 echo -e "\n$(tput setaf 6)Logs zipped into $user.zip. $(tput sgr 0) \n"
                 du -sch $user.zip
                 echo -e "\n$(tput setaf 6)Transferring zip file to demomonkey server... $(tput sgr 0)\n"
-                curl --insecure --user root:$passwd -T $user.zip sftp://142.4.4.187/usr/local/apache/htdocs/ &> /dev/null
+                curl --insecure --user root:$passwd -T $user.zip sftp://xxx.x.x.xxx/usr/local/apache/htdocs/ &> /dev/null
                 echo -e "\n$(tput setaf 6)Transfer is Completed!$(tput sgr 0) \n"
                 echo -e "\n$(tput setaf 6)Removing log files created from this server... $(tput sgr 0) \n"
                 rm -fv *.txt *.zip &> /dev/null

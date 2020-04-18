@@ -1,6 +1,6 @@
 #!/bin/bash
 #Author:Mohamed Najaaf
-#Logs for abuse team
+#Script to find a cPanel account's all related Logs and the O/P will be a downloadable link of a remote server.
 clear
 passwd="xxxxxxxxxx"
 logs()

@@ -1,6 +1,6 @@
 #!/bin/bash
 #Author:Mohamed Najaaf
-#Script for abuse team
+#Script to Fetch a cPanel account's Data(Website, DB, Mails) and Logs (SSH, FTP, Exim, Domain access, cPanel, Mailbox). - O/P will be a downloadable link within the same server.
 clear
 m=0;
 em=0;

@@ -17,7 +17,7 @@ disk_alert()
 	echo -e "\nList of Directories consuming high disk space:\n---------------------------------------------\n" >> /root/diskusagedata.txt
 	find / -mindepth 2 -type d -exec du -Sh {} + | egrep -v 'virtfs|usr|lib|swap|boot|sql' | sort -rh | uniq | head -n 5 >> /root/diskusagedata.txt
 
-	mail -s "Disk_Usage_Warning-`hostname`-`hostname -i`" apac-retail-hps@endurance.com < /root/diskusagedata.txt
+	mail -s "Disk_Usage_Warning-`hostname`-`hostname -i`" test@test.com < /root/diskusagedata.txt
 	rm -f /root/diskusagedata.txt
 	rm -f cron_disk_alert.sh*
 }
